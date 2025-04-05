@@ -6,15 +6,15 @@ import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 
-public class HudExample extends HudElement {
+public class NotifsHud extends HudElement {
     /**
      * The {@code name} parameter should be in kebab-case.
      */
-    public static final HudElementInfo<HudExample> INFO = new HudElementInfo<>(
-        MeteorNotifs.HUD_GROUP, "example", "HUD element example.", HudExample::new
+    public static final HudElementInfo<NotifsHud> INFO = new HudElementInfo<>(
+        MeteorNotifs.HUD_GROUP, "notifs-hud", "Displays notifications in the HUD.", NotifsHud::new
     );
 
-    public HudExample() {
+    public NotifsHud() {
         super(INFO);
     }
 

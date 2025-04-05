@@ -1,7 +1,7 @@
 package me.ricky.notifs;
 
 import com.mojang.logging.LogUtils;
-import me.ricky.notifs.hud.HudExample;
+import me.ricky.notifs.hud.NotifsHud;
 import me.ricky.notifs.systems.NotifsConfig;
 import me.ricky.notifs.systems.NotifsTab;
 import meteordevelopment.meteorclient.addons.GithubRepo;
@@ -23,7 +23,7 @@ public class MeteorNotifs extends MeteorAddon {
         Tabs.add(new NotifsTab());
 
         // HUD
-        Hud.get().register(HudExample.INFO);
+        Hud.get().register(NotifsHud.INFO);
     }
 
     @Override
