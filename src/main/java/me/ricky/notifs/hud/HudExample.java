@@ -1,6 +1,6 @@
-package com.example.addon.hud;
+package me.ricky.notifs.hud;
 
-import com.example.addon.AddonTemplate;
+import me.ricky.notifs.MeteorNotifs;
 import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;
@@ -10,7 +10,9 @@ public class HudExample extends HudElement {
     /**
      * The {@code name} parameter should be in kebab-case.
      */
-    public static final HudElementInfo<HudExample> INFO = new HudElementInfo<>(AddonTemplate.HUD_GROUP, "example", "HUD element example.", HudExample::new);
+    public static final HudElementInfo<HudExample> INFO = new HudElementInfo<>(
+        MeteorNotifs.HUD_GROUP, "example", "HUD element example.", HudExample::new
+    );
 
     public HudExample() {
         super(INFO);

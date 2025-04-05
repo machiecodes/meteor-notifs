@@ -1,24 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "meteor-notifs",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Meteor Notifs",
+  "description": "Proof of concept for HUD-based minimalist notifications that fit the Meteor theme.",
   "authors": [
-    "seasnail"
+    "MachieChirps"
   ],
-  "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
-  },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/notifs/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "me.ricky.notifs.MeteorNotifs"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "meteor-notifs.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
