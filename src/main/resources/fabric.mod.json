@@ -7,7 +7,7 @@
   "authors": [
     "MachieChirps"
   ],
-  "icon": "assets/notifs/icon.png",
+  "icon": "assets/meteor-notifs/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
